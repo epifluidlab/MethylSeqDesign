@@ -216,7 +216,7 @@ Resampling <- function(target.N, posterior, p.values, parameter, ngenes, FDR, fa
             FDR.unique[max(index)]
         } else 0
 
-        if (min(p.values.star.star) > p.values.cut | is.na(p.values.cut)) {
+        if (min(p.values.star.star, na.rm=T) > p.values.cut | is.na(p.values.cut)) {
             Declare_status = rep("nonDMR", ngenes)
         } else {
             Declare_status = DE_status_posterior
