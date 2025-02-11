@@ -5,7 +5,7 @@ You can install this package by copying and paste the following code into R
 ```
 install.packages("devtools") ## In case you didn't install devtools
 devtools::install_github("gitlongor/pi0") # install the dependency pi0
-devtools::install_github("liupeng2117/MethylSeqDesign")
+devtools::install_github("epifluidlab/MethylSeqDesign")
 ```
 ## Genome-wide power calculation
 * Call the example data. The toy example contains the mouse methylation data from 6 sample in 2 groups, each group has 3 samples.
