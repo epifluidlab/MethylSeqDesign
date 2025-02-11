@@ -42,7 +42,7 @@ Estimate.EDR.from.pilot <- function(res, N0, target.N, thresh.p = 0.005, FDR = 0
     #if (!class(target.N) %in% c("matrix", "numeric")) {
         stop("Argument target.N is not correctly specified")
     #} else if (class(target.N) == "numeric") {
-    } else if (is.numeric(target.N)) {
+    } else if (!is.matrix(target.N) & is.numeric(target.N)) {
         target.N = matrix(rep(target.N, 2), ncol = 2)
     }
 
